@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,
+body {
+  background-color: #403d58;
+  font-family: 'Poppins';
+}
+
+div.verticalAlign {
+  display: flex;
+}
+
+div.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+div.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+div.spaceBetween {
+  justify-content: space-between;
+}
+
+/* Hide the scrollbar track */
+::-webkit-scrollbar {
+  width: 5px; /* Adjust the width to make it thin */
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the transparency as needed */
+  border-radius: 10px; /* Adjust the border radius as needed */
+}
+
+/* Optional: Hover effect on scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */
+}
+
+.auth-container {
+  background-color: #504e6c;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 30px 100px;
+  text-align: center;
+}
+
+h1.page-title {
+  font-size: 28px;
+  font-family: 'Poppins';
+  font-weight: 200;
+  color: #ffffff;
+  margin: 12px 0px 0px;
+}
+
+.header-container {
+  height: 60px;
+}
+.side-container {
+  background-color: #2f2d48;
+  border-radius: 20px;
+  height: 90vh;
+  padding: 20px;
+}
+.main-container {
+  background-color: #2f2d48;
+  border-radius: 20px;
+  height: 90vh;
+  padding: 5px 30px 5px;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+}
+.logo-container {
+  margin-top: 10px;
+  flex-direction: row;
+  display: flex;
+}
+p.logotext-login {
+  font-family: 'Poppins';
+  color: #ffffff;
+  font-size: 26px;
+  margin-left: 6px;
+  margin-top: 8px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+p.context-white {
+  font-family: 'Poppins';
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 200;
+  margin-bottom: 6px;
+}
+p.logotext {
+  font-family: 'Poppins';
+  color: #ffffff;
+  font-size: 22px;
+  margin-left: 6px;
+  margin-top: 4px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+a.sidemenu-link {
+  padding: 10px;
+  display: flex;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-weight: 200;
+}
+
+a.sidemenu-link:hover {
+  background-color: #504e6c;
+  border-radius: 6px;
+}
+
+.logo-login {
+  width: 80px;
+}
+
+.form-control {
+  margin-bottom: 12px;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px;
+}
+
+.form-control2 {
+  margin-bottom: 6px;
+  font-size: 12px;
+  padding: 6px;
+}
+
+.btn-success {
+  background-color: #ec6378;
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+}
+.btn-success:hover {
+  background-color: #ab4252;
+}
+.btn-link {
+  color: #fff;
+  margin-top: 12px;
+  text-decoration: none;
+  font-size: 14px;
+}
+p.credit {
+  color: #fff;
+  font-weight: 200;
+  font-size: 13px;
+}
+.btn-link:hover {
+  color: #ec6378;
+}
+
+div.pageHeaderContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+div.topRightBtns {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+/* ////////////////////////////// General components ////////////////////////////// */
+div.primaryRadioButtonsContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+button.radioBtn {
+  margin-left: 1px;
+  margin-right: 1px;
+  background-color: #3e2a7b;
+}
+
+label.formLbl {
+  color: #fff;
+  font-weight: 200;
+  font-size: 11px;
+}
+
+div.sideMenuBody {
+  height: 70%;
+}
+
+div.sideMenuHeader {
+  background-color: #504e6c;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+img.avatar {
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+  margin: 8px;
+}
+
+#agents > div,
+#clients > div,
+#leads > div,
+#multi-select > div {
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 200;
+  border-radius: 8px;
+}
+/* ////////////////////////////// General components ////////////////////////////// */
+/**
+important preventing components overvlows
+*/
+
+/* ////////////////////////////// Assets ////////////////////////////// */
+form#newAssetForm,
+div.wrapper {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 80vh;
+}
+
+textarea#AssetDescription {
+  height: 100px;
+}
+
+div.addAmenityContainer,
+div.AddImageContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+#AddAmenityBtn,
+#AddImageButton {
+  margin: 0px 0px 12px;
+}
+
+button.amenity {
+  margin: 1px;
+}
+
+div.amenitiesContainer {
+  border-bottom: 1px solid #fff;
+  height: 80px;
+  overflow-y: scroll;
+}
+
+p.assetTimeStamps {
+  color: #ffffff;
+  font-weight: 400;
+  background-color: #ab4252;
+  width: fit-content;
+  border-radius: 8px;
+  padding: 4px;
+  margin: 12px 0px 0px;
+}
+
+.uploadedImage {
+  height: 100px;
+  margin: 4px;
+  border-radius: 4px;
+}
+
+button.submitBtn {
+  min-width: fit-content;
+  max-width: 40%;
+  margin-top: 16px;
+}
+
+div.assetsFilter {
+  /* border: 1px solid red; */
+  height: 80vh;
+  background-color: #504e6c;
+  border-radius: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+div.assetsContainer {
+  /* border: 1px solid red; */
+  /* height: 80vh; */
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  align-items: start;
+}
+
+button.assetBtn:hover {
+  background-color: #403d58;
+}
+
+button.assetBtn > p {
+  font-size: 13px;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+div.assetImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img.assetPrimaryImageSmall {
+  height: 200px;
+  width: 100%;
+  padding: 0px 6px;
+  border-radius: 8px;
+}
+
+button.removeImageBtn {
+  border: 0px;
+  background-color: transparent;
+}
+
+.uploadedImages {
+  position: relative;
+}
+
+.imageContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.uploadedImage {
+  max-width: 130px;
+}
+
+.trashIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContainer.selected .trashIcon {
+  display: flex;
+}
+
+.imageContainer:hover .trashIcon {
+  display: flex;
+}
+
+button.filterBtn {
+  margin-top: 6px;
+  width: fit-content;
+  padding: 8px;
+}
+
+div.filterBtnsContainer {
+  align-items: center;
+}
+
+button.addBtn {
+  padding: 12px 12px;
+  margin-top: 20px;
+}
+
+div.carousel {
+  margin: 16px;
+}
+
+div.dealContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: end;
+}
+
+button.closeDealBtn {
+  width: fit-content;
+  padding: 4px 6px;
+  font-weight: 600;
+}
+
+/* 
+div.carousel-item {
+  width: 0px;
+}
+
+div.active {
+  max-height: 400px;
+  width: 500px;
+} */
+/* ////////////////////////////// Assets ////////////////////////////// */
+
+/* ////////////////////////////// Assets Item ////////////////////////////// */
+div.addressWrapper > p {
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #f7f6f6;
+  margin-top: 8px;
+  text-align: start;
+}
+
+p.assetDetailText {
+  font-size: 12px;
+  color: #f7f6f6;
+  text-align: center;
+  background-color: #2f2d48;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  padding: 8px 0px;
+}
+
+p.assetPriceText {
+  background-color: #f7f6f6;
+  text-align: center;
+  margin: 6px 30px;
+  border-radius: 12px;
+  font-weight: 400;
+}
+
+div.assetContainer {
+  padding: 6px;
+  text-align: center;
+}
+
+/* ////////////////////////////// Assets Item ////////////////////////////// */
+
+button.assetBtn,
+button.leadsBtn,
+button.agentBtn {
+  width: 90%;
+  border-radius: 8px;
+  background-color: #504e6c;
+  border: 0px;
+  height: fit-content;
+  overflow: hidden;
+}
+
+p.assetLeadCounter {
+  background-color: #d5d5d5;
+  padding: 6px;
+  border-radius: 8px;
+  font-weight: 800;
+}
+/* ////////////////////////////// Assets Item ////////////////////////////// */
+
+/* ////////////////////////////// Settings ////////////////////////////// */
+
+div.planInnerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 20px 16px;
+  height: 80%;
+  background-color: #d1c4e9;
+  border-radius: 16px;
+}
+
+div.planDescription {
+  height: 80%;
+  padding-top: 26px;
+}
+/* ////////////////////////////// Settings ////////////////////////////// */
+
+/* ////////////////////////////// Leads ////////////////////////////// */
+button.leadsBtn {
+  width: 100%;
+}
+
+div.leadsContainer {
+  margin-top: 8px;
+}
+
+div.leadDetailsContainer {
+  color: #ffffff;
+  text-align: start;
+  font-size: 18px;
+}
+
+div.leadDetailsContainer > div:nth-child(6) {
+  text-align: end;
+}
+
+button.addToLogBtn {
+  height: 70px;
+  margin: 10px;
+}
+
+div.addToLogBtnContainer {
+  display: flex;
+  align-items: end;
+}
+
+button.leadsBtn {
+  background-color: #504e6c;
+  border-radius: 8px;
+  margin-bottom: 1px;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+button.leadsBtn :hover {
+  background-color: #403d58;
+}
+
+div.logMessageItem {
+  background-color: #504e6c;
+  border-radius: 8px;
+  margin-top: 4px;
+}
+
+div.logMessageItem > p {
+  margin-bottom: 2px;
+  color: #f7f6f6;
+}
+
+p.logDate {
+  font-size: 12px;
+  font-weight: 600;
+}
+/* ////////////////////////////// Leads ////////////////////////////// */
+
+div.modal-dialog {
+  border-radius: 8px;
+}
+div.modal-dialog,
+div.modal-content,
+div.modal-footer {
+  border: 0px;
+  background-color: #ab4252;
+  color: #ffffff;
+}
+/* ////////////////////////////// Dashboard ////////////////////////////// */
+div.dashboardHeader {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+}
+
+h3.planText {
+  margin: 12px 0px 0px;
+  width: fit-content;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+h3.basicPlan {
+  background: linear-gradient(0.25turn, #ab4252, #ec6378, #e86b7e);
+  color: #ffffff;
+  font-weight: 200;
+}
+
+h3.premiumPlan {
+  background: linear-gradient(0.25turn, #ffb300, #e1b635, #e6bf3d);
+  color: #0a0a0a;
+  font-weight: 300;
+}
+
+h3.platinumPlan {
+  background: linear-gradient(0.25turn, #d1c4e9, #b39ddb, #9575cd);
+  color: #0a0a0a;
+  font-weight: 400;
+}
+
+h5.chartHeader {
+  color: #f7f6f6;
+  text-align: center;
+}
+
+p.newLeadsCounterText {
+  color: #f7f6f6;
+  font-size: 18px;
+  font-weight: 300;
+  border-bottom: 1px dashed #f7f6f6;
+  width: fit-content;
+  text-align: center;
+}
+
+h4.positionText {
+  margin-top: 14px;
+  color: #d5d5d5;
+  font-weight: 300;
+}
+
+p.dataCount {
+  text-align: center;
+  background-color: #504e6c;
+  padding: 26px 0px;
+  border-radius: 8px;
+  color: #d5d5d5;
+  font-size: 26px;
+}
+/* ////////////////////////////// Dashboard ////////////////////////////// */
+
+button.goPremiumBtn,
+button.lockBtn {
+  width: fit-content;
+  padding: 4px 8px;
+}
+
+button.chartBtb {
+  width: 100px;
+  margin: 0px 4px;
+  padding: 2px 4px;
+}
+
+div.profitChartActions {
+  justify-content: end;
+  align-items: center;
+}
+
+div.dashboardWidgetInner {
+  padding: 6px;
+  background-color: #504e6c;
+  height: 45vh;
+  border-radius: 16px;
+}
+
+div.dataCountContainer {
+  height: 2vh;
+}
+/* ////////////////////////////// Agents ////////////////////////////// */
+
+div.agentContainer {
+  padding: 8px;
+}
+
+img.agentImg {
+  width: 100%;
+  border-radius: 50%;
+}
+
+div.agentContainer {
+}
+
+div.agentImgContainer {
+}
+
+div.agentBody {
+}
+
+p.agentName {
+  padding: 2px 8px;
+  background-color: #d5d5d5;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+p.agentContactText {
+  font-size: 12px;
+  text-align: start;
+  margin-left: 6px;
+  margin-bottom: 1px;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+div.agentFDContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.agentFDImageContainer {
+  height: 20vh;
+  margin: 16px 0px;
+}
+
+img.agentFDImage {
+  height: 100%;
+  border-radius: 50%;
+}
+
+div.agentFDDetailsContainer > p {
+  color: #d5d5d5;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 6px;
+}
+
+p.totalDeals {
+  background-color: #d5d5d5;
+  color: #0a0a0a;
+  height: fit-content;
+  padding: 6px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* ////////////////////////////// Agents ////////////////////////////// */

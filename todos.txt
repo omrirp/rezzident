@@ -1,0 +1,11 @@
+--- TO DOS ---
+
+client:
+1. fix bottom overflow in small screens like laptops
+3. share company between users
+4. prevent the users from adding assets until they update their company details
+5. remove expired or unused tokens from the DB
+6. add plan for users (regular, premium)
+7. logout all !!!!
+
+server:
